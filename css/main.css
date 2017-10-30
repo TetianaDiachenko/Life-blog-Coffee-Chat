@@ -1,0 +1,260 @@
+a, a:hover, a:visited, a:focus {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #7b2e29;
+}
+.top-block {
+	background-image: url(../img/bg_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+header {
+  	padding-top: 20px;
+  	padding-bottom: 15px;
+  	position: relative;
+}
+
+a.logo {
+	font-size: 36px;	
+	text-shadow: 4px 4px 4px #ded49f;
+	color: #7b2e29;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.menuToggle{
+	background-color: #e5d5b4;
+}
+.menuToggle:hover {
+	text-decoration: none;
+}
+.menuToggle:focus {
+	outline: none;
+}
+.menu {
+	padding-top: 5px;
+}
+.menu a, .dropdown a{
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #7b2e29;
+	padding: 15px 15px;	
+	display: block;
+}
+.menu a:hover, .dropdown a:hover {
+	color: #947B23;
+	background-color: #F6F0EB;
+	border-radius: 3px;
+	opacity: 0.8; 
+}
+
+form {
+	background-color: #e5d5b4;
+	border: 1px solid #7b2e29;
+	border-radius: 9px;
+	padding: 3px 2px;
+	margin-top: 15px;
+}
+.glyphicon {
+	color: #7b2e29;
+}
+input[type="text"] {
+	width: 75%;
+}
+.input_search, .search {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.name {
+	font-size: 12rem;	
+	text-shadow: 4px 4px 4px #ded49f;
+	color: #7b2e29;
+	font-style: italic;
+	font-weight: bold;
+}
+h1 {
+	margin-top: 65px;	
+}
+
+.content_blog div{
+	background-color: #FFFFFF;
+}
+
+.flex-block {
+	display: flex;
+	flex-direction: row;
+	background-color: #E9E1E1;
+}
+.flex-post {
+	padding: 25px;
+	margin-top: -40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.post {
+	height: 120px;
+	width: 150px;
+	border-radius: 50% 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post_1 {
+	background: url(../img/item1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.post_2 {
+	background: url(../img/item2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.post_3 {
+	background: url(../img/item3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.post_4 {
+	background: url(../img/item4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.flex-post h3 {
+	font-size: 23px;
+	font-weight: bold;
+}
+.read-more {
+	color: #3C1010;
+	font-weight: bold;
+}
+
+footer {
+	min-height: 100px;
+    background-color: #dfcfad;
+    padding: 20px;
+}
+.made_by {
+	font-size: 18px;	
+	color: #7b2e29;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.contact {
+	font-weight: bold;
+    color: #7b2e29;
+}
+
+.social div{
+	background-color: #e5d5b4;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #7b2e29;
+    background-image: url(../img/social.png);
+    margin: 10px;
+}
+.fs {
+	background-position: 55px 52px;
+}
+.inst {
+	background-position: 51px 137px;
+}
+.tv {
+	background-position: 52px 96px;
+}
+
+@media (max-width: 366px) {
+	.post {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 4px;
+	}	
+	.dropdown-mobile {
+		position: absolute;
+		background-color: #e5d5b4;
+}
+ 	.flex-block {
+ 		width: 80%;
+ 		flex-direction: column;
+ 		justify-content: center;
+ 	}
+ 	.second {
+ 		display: none;
+ 	}
+ 	.made_by, 
+	.contact,
+	.social {
+		text-align: center;
+	}
+	.contact {
+		padding-top: 5px;
+	}
+	.social {
+
+	}
+}
+
+@media (max-width: 960px) {
+	html {
+		font-size: 8px;
+	}
+	.dropdown-mobile {
+		background-color: #e5d5b4;
+		position: absolute;
+		right: 50px;
+	}
+	.flex-block {
+		flex-direction: column;
+ 		justify-content: center;
+ 		align-items: center;
+ 	}
+} 
+
+@media (max-width: 992px) {
+	.dropdown-mobile {
+		background-color: #e5d5b4;
+		position: absolute;
+		right: 5%;
+	}
+	.flex-block {
+		flex-direction: column;
+ 		justify-content: center;
+ 		align-items: center;
+ 	}
+ 	.flex-post {
+ 		padding: 35px;
+ 	}
+	input[type="text"] {
+	width: 30%;
+	}
+	form {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 1200px) {
+	input[type="text"] {
+	width: 50%;
+	}
+	.flex-post {
+ 		padding: 15px;
+ 	}
+}
+
+
+
